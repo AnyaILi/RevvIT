@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4EC7BE2A6748B6007EE858 /* NewHabitTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EC7BD2A6748B6007EE858 /* NewHabitTrackerView.swift */; };
+		BD4EC7C02A67493E007EE858 /* HabitTrackerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EC7BF2A67493E007EE858 /* HabitTrackerItem.swift */; };
+		BD4EC7C22A6749B8007EE858 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EC7C12A6749B8007EE858 /* Persistence.swift */; };
+		BD4EC7C52A6749E0007EE858 /* RevvIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD4EC7C32A6749E0007EE858 /* RevvIT.xcdatamodeld */; };
 		BDE6E7FA2A67155100ABFBE1 /* RevvITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6E7F92A67155100ABFBE1 /* RevvITApp.swift */; };
 		BDE6E7FC2A67155100ABFBE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6E7FB2A67155100ABFBE1 /* ContentView.swift */; };
 		BDE6E7FE2A67155200ABFBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE6E7FD2A67155200ABFBE1 /* Assets.xcassets */; };
 		BDE6E8012A67155200ABFBE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE6E8002A67155200ABFBE1 /* Preview Assets.xcassets */; };
+		BDE6E8082A67159500ABFBE1 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6E8072A67159500ABFBE1 /* Homepage.swift */; };
+		BDE6E80A2A6715E600ABFBE1 /* HabitTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6E8092A6715E600ABFBE1 /* HabitTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4EC7BD2A6748B6007EE858 /* NewHabitTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitTrackerView.swift; sourceTree = "<group>"; };
+		BD4EC7BF2A67493E007EE858 /* HabitTrackerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerItem.swift; sourceTree = "<group>"; };
+		BD4EC7C12A6749B8007EE858 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BD4EC7C42A6749E0007EE858 /* RevvIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RevvIT.xcdatamodel; sourceTree = "<group>"; };
 		BDE6E7F62A67155100ABFBE1 /* RevvIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevvIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE6E7F92A67155100ABFBE1 /* RevvITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevvITApp.swift; sourceTree = "<group>"; };
 		BDE6E7FB2A67155100ABFBE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDE6E7FD2A67155200ABFBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDE6E8002A67155200ABFBE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDE6E8072A67159500ABFBE1 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		BDE6E8092A6715E600ABFBE1 /* HabitTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				BDE6E7F92A67155100ABFBE1 /* RevvITApp.swift */,
 				BDE6E7FB2A67155100ABFBE1 /* ContentView.swift */,
+				BDE6E8072A67159500ABFBE1 /* Homepage.swift */,
+				BDE6E8092A6715E600ABFBE1 /* HabitTracker.swift */,
+				BD4EC7BD2A6748B6007EE858 /* NewHabitTrackerView.swift */,
+				BD4EC7BF2A67493E007EE858 /* HabitTrackerItem.swift */,
+				BD4EC7C12A6749B8007EE858 /* Persistence.swift */,
+				BD4EC7C32A6749E0007EE858 /* RevvIT.xcdatamodeld */,
 				BDE6E7FD2A67155200ABFBE1 /* Assets.xcassets */,
 				BDE6E7FF2A67155200ABFBE1 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4EC7C02A67493E007EE858 /* HabitTrackerItem.swift in Sources */,
+				BDE6E8082A67159500ABFBE1 /* Homepage.swift in Sources */,
+				BDE6E80A2A6715E600ABFBE1 /* HabitTracker.swift in Sources */,
+				BD4EC7C52A6749E0007EE858 /* RevvIT.xcdatamodeld in Sources */,
+				BD4EC7C22A6749B8007EE858 /* Persistence.swift in Sources */,
 				BDE6E7FC2A67155100ABFBE1 /* ContentView.swift in Sources */,
 				BDE6E7FA2A67155100ABFBE1 /* RevvITApp.swift in Sources */,
+				BD4EC7BE2A6748B6007EE858 /* NewHabitTrackerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD4EC7C32A6749E0007EE858 /* RevvIT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD4EC7C42A6749E0007EE858 /* RevvIT.xcdatamodel */,
+			);
+			currentVersion = BD4EC7C42A6749E0007EE858 /* RevvIT.xcdatamodel */;
+			path = RevvIT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BDE6E7EE2A67155100ABFBE1 /* Project object */;
 }
