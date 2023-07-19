@@ -15,36 +15,49 @@ struct HabitTracker: View {
         
     var toDoItems: FetchedResults<ToDo>
     var body: some View {
-        VStack {
-            HStack{
-                Text("To-Do List")
-                    .font(.system(size: 40))
-                    .fontWeight(.black)
-                Spacer()
-                
-                Button(action: {
-                    self.showNewTask = true
-                }){
-                    Text("+")
-                }
-            }
-            .padding()
-            Spacer()
-            List {
-                ForEach (toDoItems) { toDoItem in
-                    if toDoItem.isImportant == true {
-                        Text("‼️" + (toDoItem.title ?? "No title"))
-                    } else {
-                        Text(toDoItem.title ?? "No title")
+        ZStack{
+            Color(hex: "f6efe7")
+                .ignoresSafeArea()
+            VStack {
+                HStack{
+                    
+                    Text("Habit Tracker")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                    Spacer()
+                    
+                    Button(action: {
+                        self.showNewTask = true
+                    }){
+                        Text("+")
+                            .font(.system(size: 40))
+                            .foregroundColor(Color.black)
                     }
+                }
+                .padding()
+                Spacer()
+                List {
+                    ForEach (toDoItems) { toDoItem in
+                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                            Text(toDoItem.title ?? "No title")
+                                .listRowBackground(Color(hex: "CDD7B6"))
+                        }
+                                                
+                    }
+                    .onDelete(perform: deleteTask)
                     
                 }
-                .onDelete(perform: deleteTask)
+                // .listStyle(.plain)
+                
+
             }
-            // .listStyle(.plain)
-        }
-        if showNewTask {
-            NewHabitTrackerView(showNewTask: $showNewTask, title: "", isImportant: false)
+            
+            if showNewTask {
+                NewHabitTrackerView(showNewTask: $showNewTask, title: "")
+                //        isImportant: false)
+            }
+            
+            
         }
         
     }
@@ -58,6 +71,7 @@ struct HabitTracker: View {
                 print(error)
             }
         }
+        
     }
 }
 
