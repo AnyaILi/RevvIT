@@ -7,13 +7,18 @@
 
 import SwiftUI
 
+public var item1 = ""
+
+
 struct HabitTracker: View {
     @Environment(\.managedObjectContext) var context
     @State private var showNewTask = false
+//    @State private var item1 = ""
     @FetchRequest(
-            entity: ToDo.entity(), sortDescriptors: [ NSSortDescriptor(keyPath: \ToDo.id, ascending: false) ])
-        
-    var toDoItems: FetchedResults<ToDo>
+            entity: HabitTracker1.entity(), sortDescriptors: [ NSSortDescriptor(keyPath: \HabitTracker1.id, ascending: false) ])
+    
+    var habitItems: FetchedResults<HabitTracker1>
+    
     var body: some View {
         ZStack{
             Color(hex: "f6efe7")
@@ -37,33 +42,45 @@ struct HabitTracker: View {
                 .padding()
                 Spacer()
                 List {
-                    ForEach (toDoItems) { toDoItem in
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                            Text(toDoItem.title ?? "No title")
-                                .listRowBackground(Color(hex: "CDD7B6"))
-                        }
-                                                
+                    ForEach(habitItems) { habitItem in
+                        let days = [
+                            habitItem.sunday == true ? "Sun" : nil,
+                            habitItem.monday == true ? "Mon" : nil,
+                            habitItem.tuesday == true ? "Tue" : nil,
+                            habitItem.wednesday == true ? "Wed" : nil,
+                            habitItem.thursday == true ? "Thur" : nil,
+                            habitItem.friday == true ? "Fri" : nil,
+                            habitItem.saturday == true ? "Sat" : nil,
+                            // Add other days' handling as needed...
+                        ]
+                            .compactMap { $0 }
+                            .joined(separator: ", ")
+                        
+                        let title = habitItem.title ?? "No title"
+                        let displayText = days.isEmpty ? title : title + "\n" + days
+                        Text(displayText)
                     }
                     .onDelete(perform: deleteTask)
+                    
                     
                 }
                 // .listStyle(.plain)
                 
-
+                
             }
+        }
             
             if showNewTask {
-                NewHabitTrackerView(showNewTask: $showNewTask, title: "")
-                //        isImportant: false)
+                NewHabitTrackerView(showNewTask: $showNewTask, title: "", sunday: false, monday: false, tuesday: false, wednesday: false, thursday: false, friday: false, saturday: false)
             }
             
             
-        }
+//        }
         
     }
     private func deleteTask(offsets: IndexSet) {
             withAnimation {
-            offsets.map { toDoItems[$0] }.forEach(context.delete)
+            offsets.map { habitItems[$0] }.forEach(context.delete)
 
             do {
                 try context.save()

@@ -11,6 +11,9 @@
 		BD4EC7BE2A6748B6007EE858 /* NewHabitTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EC7BD2A6748B6007EE858 /* NewHabitTrackerView.swift */; };
 		BD4EC7C02A67493E007EE858 /* HabitTrackerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EC7BF2A67493E007EE858 /* HabitTrackerItem.swift */; };
 		BD4EC7C22A6749B8007EE858 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EC7C12A6749B8007EE858 /* Persistence.swift */; };
+		BD6767A92A69EB9A0060BAF3 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6767A82A69EB9A0060BAF3 /* NewToDoView.swift */; };
+		BD6767AB2A69EBBD0060BAF3 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6767AA2A69EBBD0060BAF3 /* ToDoItem.swift */; };
+		BD6767AF2A69ECB50060BAF3 /* ToDo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6767AE2A69ECB50060BAF3 /* ToDo1.swift */; };
 		BDE6E7FA2A67155100ABFBE1 /* RevvITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6E7F92A67155100ABFBE1 /* RevvITApp.swift */; };
 		BDE6E7FC2A67155100ABFBE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6E7FB2A67155100ABFBE1 /* ContentView.swift */; };
 		BDE6E7FE2A67155200ABFBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE6E7FD2A67155200ABFBE1 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		BD4EC7BD2A6748B6007EE858 /* NewHabitTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitTrackerView.swift; sourceTree = "<group>"; };
 		BD4EC7BF2A67493E007EE858 /* HabitTrackerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerItem.swift; sourceTree = "<group>"; };
 		BD4EC7C12A6749B8007EE858 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BD6767A82A69EB9A0060BAF3 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		BD6767AA2A69EBBD0060BAF3 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		BD6767AE2A69ECB50060BAF3 /* ToDo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo1.swift; sourceTree = "<group>"; };
 		BDE6E7F62A67155100ABFBE1 /* RevvIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevvIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE6E7F92A67155100ABFBE1 /* RevvITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevvITApp.swift; sourceTree = "<group>"; };
 		BDE6E7FB2A67155100ABFBE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 				BDE6E7FB2A67155100ABFBE1 /* ContentView.swift */,
 				BD0A94752A6876610042E0E4 /* RevvIT.xcdatamodeld */,
 				BDE6E8072A67159500ABFBE1 /* Homepage.swift */,
+				BD6767A82A69EB9A0060BAF3 /* NewToDoView.swift */,
+				BD6767AE2A69ECB50060BAF3 /* ToDo1.swift */,
+				BD6767AA2A69EBBD0060BAF3 /* ToDoItem.swift */,
 				BDE6E8092A6715E600ABFBE1 /* HabitTracker.swift */,
 				BD4EC7BD2A6748B6007EE858 /* NewHabitTrackerView.swift */,
 				BD4EC7BF2A67493E007EE858 /* HabitTrackerItem.swift */,
@@ -155,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD6767A92A69EB9A0060BAF3 /* NewToDoView.swift in Sources */,
+				BD6767AF2A69ECB50060BAF3 /* ToDo1.swift in Sources */,
+				BD6767AB2A69EBBD0060BAF3 /* ToDoItem.swift in Sources */,
 				BD4EC7C02A67493E007EE858 /* HabitTrackerItem.swift in Sources */,
 				BDE6E8082A67159500ABFBE1 /* Homepage.swift in Sources */,
 				BDE6E80A2A6715E600ABFBE1 /* HabitTracker.swift in Sources */,
