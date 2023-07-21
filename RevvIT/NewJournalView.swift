@@ -11,7 +11,7 @@ struct NewJournalView: View {
     @State private var promptRandom = "What's on your mind?"
     @State private var name = ""
     
-        let prompts = ["Think about one thing that made you feel productive today.", "What made you smile today?", "Which of your strengths are you most grateful for?", "Write a letter to your younger self.", "What do you look forward to?", "What is something you learned recently?, "]
+        let prompts = ["Think about one thing that made you feel productive today.", "What made you smile today?", "Which of your strengths are you most grateful for?", "Write a letter to your younger self.", "What do you look forward to?", "What is something you learned recently?"]
     
     @Environment(\.managedObjectContext) var context
     @Binding var showNewTask : Bool

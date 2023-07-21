@@ -74,6 +74,7 @@ struct Check_InPage: View {
                  }
                }
                Text(text)
+                  .font(.custom("KosugiMaru-Regular", size: 20))
                  .padding()
                ZStack{
                  RoundedRectangle(cornerRadius: 20)

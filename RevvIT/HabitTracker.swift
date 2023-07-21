@@ -59,6 +59,7 @@ struct HabitTracker: View {
                         let title = habitItem.title ?? "No title"
                         let displayText = days.isEmpty ? title : title + "\n" + days
                         Text(displayText)
+                            .font(.custom("KosugiMaru-Regular", size: 20))
                     }
                     .onDelete(perform: deleteTask)
                     

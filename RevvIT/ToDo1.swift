@@ -46,9 +46,11 @@ struct ToDo1: View {
                     ForEach (toDoItems) { toDoItem in
                         if toDoItem.isImportant == true {
                             Text("‼️ " + (toDoItem.title ?? "No title")
-                            )
+                                 )
+                            .font(.custom("KosugiMaru-Regular", size: 20))
                         } else {
                             Text(toDoItem.title ?? "No title")
+                                .font(.custom("KosugiMaru-Regular", size: 20))
                         }
                         
                         
