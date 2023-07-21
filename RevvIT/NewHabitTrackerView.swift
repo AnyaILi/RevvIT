@@ -43,9 +43,10 @@ struct NewHabitTrackerView: View {
                 .ignoresSafeArea()
             VStack{
                 Text("Habit")
-                    .font(.title)
+                    .font(.custom("KosugiMaru-Regular", size: 40))
                     .fontWeight(.bold)
                 TextField("Enter the habit description...", text: $title)
+                    .font(.custom("KosugiMaru-Regular", size: 20))
                     .padding()
                     .background(Color(hex: "CDD7B6"))
                     .cornerRadius(15)
@@ -54,9 +55,11 @@ struct NewHabitTrackerView: View {
                 
                 VStack{
                     Text("S  ")
+                    
                     Toggle(isOn: $sunday) {
                         
                         Text("")
+                          
                     }
                     .toggleStyle(CheckToggleStyle())
                     }
@@ -131,7 +134,7 @@ struct NewHabitTrackerView: View {
                     self.showNewTask = false
                 }) {
                     Text("Add")
-                        .font(.title3)
+                        .font(.custom("KosugiMaru-Regular", size: 20))
                         .foregroundColor(Color.black)
                 }
                 .padding()

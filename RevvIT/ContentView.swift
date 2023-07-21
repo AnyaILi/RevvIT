@@ -28,7 +28,7 @@ struct ContentView: View {
                 .padding()
                 VStack{
                     Text("RevvIT")
-                        .font(.largeTitle)
+                        .font(.custom("KosugiMaru-Regular", size: 60))
                         .fontWeight(.semibold)
                         .shadow(radius: 1)
                         .padding()
@@ -36,12 +36,12 @@ struct ContentView: View {
                         .frame(height: 40)
                     //            randomNum = 3
                     Text(newQuote1.quotes[num1])
-                        .font(.title)
+                        .font(.custom("KosugiMaru-Regular", size: 30))
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .padding()
                     Text("- \(newQuote1.authors[num1])")
-                        .font(.title)
+                        .font(.custom("KosugiMaru-Regular", size: 25))
                         .fontWeight(.light)
                         .foregroundColor(Color(hex: "787878"))
                     Spacer()
@@ -50,6 +50,7 @@ struct ContentView: View {
                     NavigationLink(destination: Homepage()) {
                         Text("start")
                             .foregroundColor(Color.black)
+                            .font(.custom("KosugiMaru-Regular", size: 20))
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(Color(hex: "F6EFE8"))
@@ -61,49 +62,7 @@ struct ContentView: View {
             }//zstack
 //            .toolbar {
 //                ToolbarItemGroup(placement: .status) {
-            HStack{
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                                        
-                    Image("habit tracker ")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50.0, height: 50.0)
-                       
-                }
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                    Image("journal")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50.0, height: 50.0)
-                        
-                    
-                }
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                    Image("home")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50.0, height: 70.0)
-//                        .padding()
-                }
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                    Image("emotion")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50.0, height: 50.0)
-                }
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                    Image("check list")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50.0, height: 50.0)
-//                        .padding()
-                    
-                        
-                        
-                }
-                
-            }//hstack
-//            .padding(10)
+            //            .padding(10)
             
               //  }//group
             //}//toolbar

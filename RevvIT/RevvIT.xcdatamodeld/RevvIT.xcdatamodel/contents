@@ -11,6 +11,11 @@
         <attribute name="tuesday" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="wednesday" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Journal1" representedClassName="Journal1" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="important" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="text" attributeType="String"/>
+    </entity>
     <entity name="ToDo" representedClassName="ToDo" syncable="YES" codeGenerationType="class">
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="isImportant" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>

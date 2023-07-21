@@ -18,7 +18,7 @@ struct Homepage: View {
                  .font(.system(size: 100))
                  
                  Text("RevvIT")
-                     .font(.system(size: 60))
+                     .font(.custom("KosugiMaru-Regular", size: 60))
                      .fontWeight(.medium)
                      .foregroundColor(Color(hex: "8b9475"))
                      .shadow(radius: 2)
@@ -29,14 +29,15 @@ struct Homepage: View {
                      .shadow(radius: 1)
                      .opacity(0.7)
 
-               NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+               NavigationLink(destination: Check_InPage()) {
                  HStack{
                    VStack(alignment: .leading){
                      Text("Check-in:")
-                       .font(.title)
+                           .font(.custom("KosugiMaru-Regular", size: 27))
                        .foregroundColor(Color(hex: "8b8b8b"))
                        Text("How are you\nfeeling?")
                            .fontWeight(.light)
+                           .font(.custom("KosugiMaru-Regular", size: 18))
                        .foregroundColor(Color.black)
                        .multilineTextAlignment(.leading)
                    }
@@ -51,14 +52,15 @@ struct Homepage: View {
                  .shadow(radius:5)
                }
                .padding()
-               NavigationLink(destination: Text("")){
+               NavigationLink(destination: Journal()){
                  HStack{
                    VStack(alignment: .leading) {
                      Text("Journal:")
-                       .font(.title)
+                           .font(.custom("KosugiMaru-Regular", size: 27))
                        .foregroundColor(Color(hex: "000000"))
                        Text("write down your \nthoughts...")
                            .fontWeight(.light)
+                           .font(.custom("KosugiMaru-Regular", size: 15))
                        .foregroundColor(Color(hex: "687844"))
                        .padding(.horizontal, 30)
                        .padding(.vertical, 10)
@@ -81,7 +83,7 @@ struct Homepage: View {
                  HStack{
                    VStack(alignment: .leading) {
                      Text("Habit Tracker:")
-                       .font(.title)
+                           .font(.custom("KosugiMaru-Regular", size: 27))
                        .foregroundColor(Color(hex: "000000"))
                    }
                    .frame(maxWidth: .infinity, alignment: .leading)
@@ -100,7 +102,7 @@ struct Homepage: View {
                  HStack{
                    VStack(alignment: .leading) {
                      Text("To-Do:")
-                       .font(.title)
+                           .font(.custom("KosugiMaru-Regular", size: 27))
                        .foregroundColor(Color(hex: "000000"))
                    }
                    .frame(maxWidth: .infinity, alignment: .leading)

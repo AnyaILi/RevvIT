@@ -15,17 +15,19 @@ struct NewToDoView: View {
     var body: some View {
         VStack{
             Text("Task")
-                .font(.title)
+                .font(.custom("KosugiMaru-Regular", size: 40))
                 .fontWeight(.semibold)
                 .foregroundColor(Color(hex:"8b9475"))
                 .shadow(radius: 1)
             TextField("Enter the task description...", text: $title)
+                .font(.custom("KosugiMaru-Regular", size: 20))
                 .padding()
                 .background(Color(.systemGroupedBackground))
                 .cornerRadius(15)
                 .padding()
             Toggle(isOn: $isImportant) {
                 Text("Is it important?")
+                    .font(.custom("KosugiMaru-Regular", size: 20))
             }
             .padding()
             
@@ -34,7 +36,7 @@ struct NewToDoView: View {
                 self.showNewTask = false
             }) {
                 Text("Add")
-                    .font(.title2)
+                    .font(.custom("KosugiMaru-Regular", size: 20))
             }
             .buttonStyle(.borderedProminent)
             .cornerRadius(27)

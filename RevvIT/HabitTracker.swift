@@ -27,7 +27,7 @@ struct HabitTracker: View {
                 HStack{
                     
                     Text("Habit Tracker")
-                        .font(.largeTitle)
+                        .font(.custom("KosugiMaru-Regular", size: 40))
                         .fontWeight(.black)
                     Spacer()
                     
@@ -67,6 +67,51 @@ struct HabitTracker: View {
                 // .listStyle(.plain)
                 
                 
+            }
+            VStack{
+                Spacer()
+                HStack{
+                                          NavigationLink(destination: HabitTracker()) {
+                                                                  
+                                              Image("habit tracker")
+                                                  .resizable(resizingMode: .stretch)
+                                                  .aspectRatio(contentMode: .fit)
+                                                  .frame(width: 50.0, height: 50.0)
+                                                 
+                                          }
+                                          NavigationLink(destination: Journal()) {
+                                              Image("journal")
+                                                  .resizable(resizingMode: .stretch)
+                                                  .aspectRatio(contentMode: .fit)
+                                                  .frame(width: 50.0, height: 50.0)
+                                                  
+                                              
+                                          }
+                                          NavigationLink(destination: Homepage()) {
+                                              Image("home")
+                                                  .resizable(resizingMode: .stretch)
+                                                  .aspectRatio(contentMode: .fit)
+                                                  .frame(width: 50.0, height: 70.0)
+                            //                        .padding()
+                                          }
+                                          NavigationLink(destination: Check_InPage()) {
+                                              Image("emotion")
+                                                  .resizable(resizingMode: .stretch)
+                                                  .aspectRatio(contentMode: .fit)
+                                                  .frame(width: 50.0, height: 50.0)
+                                          }
+                                          NavigationLink(destination: ToDo1()) {
+                                              Image("check list")
+                                                  .resizable(resizingMode: .stretch)
+                                                  .aspectRatio(contentMode: .fit)
+                                                  .frame(width: 50.0, height: 50.0)
+                            //                        .padding()
+                                              
+                                                  
+                                                  
+                                          }
+                                          
+                                      }//hstack
             }
         }
             
